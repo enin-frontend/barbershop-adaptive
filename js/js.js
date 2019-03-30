@@ -81,13 +81,13 @@ function showSlideReview(n) {
     var logo = document.querySelector('.page-header__logo-image');
     if(document.body.offsetWidth > 768){       
       for (i = 0; i < slides.length; i++) {
-        imageReview[i].src = "../img/reviews-desktop-img.jpg";  
+        imageReview[i].src = "img/reviews-desktop-img.jpg";  
       }
-      logo.src = '../img/logotype-tablet.svg';
+      logo.src = 'img/logotype-tablet.svg';
     }
 
     if(document.body.offsetWidth > 1200){ 
-      logo.src = '../img/logotype-desktop.svg';
+      logo.src = 'img/logotype-desktop.svg';
     }
   }
 };
