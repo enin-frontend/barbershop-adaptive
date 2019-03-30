@@ -1,13 +1,12 @@
 {
-  "name": "secondlvl",
+  "name": "Barbershop",
   "version": "1.0.0",
   "description": "FirstGulpproject",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html"
   },
-  "author": "AD",
+  "author": "Enin A.",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.4.5",
