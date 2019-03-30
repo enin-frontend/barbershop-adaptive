@@ -1,0 +1,60 @@
+.name__text {
+	width: 280px;
+	padding-left: 18px;
+	padding-top: 15px;
+  padding-bottom:16px;
+  
+  font:inherit;
+ 
+  border:1px solid #e5ddd5;
+	box-sizing: border-box;
+	resize: none;
+  &:hover{
+    border-color: #d5c9bd;
+  }
+  &:active,
+  &:focus{
+    border-color: #999999;
+  }
+  &::placeholder {
+    color: #000000;
+    font-size: 18px;
+  }
+}
+
+@media(min-width: @tablet-width){
+	.name__text{
+		width: 213px;
+	}
+ 
+	.name__user--phone,
+  .name__user--mail{
+  	width: 640px;
+  	margin-bottom: 29px;
+  }
+
+  .name__user--mail{
+  	margin-bottom: 0;
+  }
+
+  .name__user--text{
+		width: 640px;
+		padding-bottom: 140px;
+  }
+}
+
+@media(min-width: @desktop-width){
+	.name__text{
+		width: 295px;
+	}
+
+	.name__user--phone,
+  .name__user--mail{
+  	width: 460px;
+  }
+
+  .name__user--text{
+  	width: 960px;
+  	margin-bottom: 15px;
+  }
+}

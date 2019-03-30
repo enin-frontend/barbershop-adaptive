@@ -1,0 +1,93 @@
+.beard__tittle{
+	margin-bottom: 73px;
+
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.beard__list{
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+}
+
+.beard__item{
+	width: 85px;
+	display: flex;
+	flex-direction: column;
+  margin-bottom: 70px;
+
+  text-align: center;
+  &:nth-child(4),
+  &:nth-child(5){
+    margin-bottom: 0;
+  }
+}
+
+.beard__item label{
+  position: relative;
+
+	display: block;
+ 
+	cursor: pointer;
+}
+
+@media(min-width: @tablet-width){
+	.beard__tittle{
+    position: relative;
+
+		display: flex;
+		align-items:center;
+		justify-content: center;
+    width: 100%;
+    
+		font-size: 30px;
+    &:before{
+      position: absolute;
+      content: "";
+      left: 0;
+
+      width: 135px;
+      height: 1px;
+
+      background-color: #e5ddd5;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      right: 0;
+
+      width: 135px;
+      height: 1px;
+
+      background-color: #e5ddd5;
+    }
+  }
+  
+	.beard__list{
+		justify-content: space-between;
+		margin-bottom: 0;
+	}
+
+	.beard__item {
+		font-size: 24px;
+    svg{
+      padding-top: 20px;
+    }
+	}
+}
+
+@media(min-width: @desktop-width){
+	.beard__tittle{
+		&:before,
+		&:after{
+			width: 280px;
+		}
+	}
+	.beard__list{
+		justify-content: space-around;
+	}
+}

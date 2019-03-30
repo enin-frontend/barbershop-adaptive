@@ -1,0 +1,90 @@
+.filter-input-radio + label{
+  &:hover{
+    &::before{
+      border-color: #d5c9bd;
+    }
+  }
+
+  &:active{
+    &::before{
+      background-color: #d5c9bd;
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    left:16px;
+    top: -58px;
+
+    width: 46px;
+    height: 46px;
+
+    border: 2px solid #e7e0d8;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.filter-input-radio:checked + label{
+  &:active{
+    &::after{
+      background-color: #fff;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    left: 31px;
+    top: -43px;
+
+    width: 18px;
+    height: 18px;
+
+    border:1px solid #e7e0d8;
+    border-radius: 50%;
+    background-color:transparent;
+  }
+}
+
+.filter-input-checkbox + label{
+  &:hover{
+    &::before{
+      border-color: #d5c9bd;
+    }
+  }
+
+  &:active{
+    &::before{
+      background-color: #d5c9bd;
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    left:-57px;
+    top: -3px;
+
+    width: 32px;
+    height: 32px;
+
+    border: 2px solid #e7e0d8;
+    background-color: #ffffff;
+  }
+}
+
+.filter-input-checkbox:checked + label{
+  &::after{
+    content: "";
+    left: -49px;
+    top: 6px;
+    position: absolute;
+
+    width: 22px;
+    height: 16px;
+
+    background: url(../img/tick.svg) no-repeat;
+  }
+}

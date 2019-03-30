@@ -1,0 +1,63 @@
+.working-hours {
+	display: flex;
+  padding-left: 20px;
+  padding-right: 47px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+
+  border: 1px solid #484848;
+  svg {
+    width: 58px;
+    height: 57px;
+    padding-right: 33px;
+  }
+}
+
+.working-hours__description {
+	margin: 0;
+}
+
+@media(min-width: @tablet-width){
+  .working-hours{    
+    padding-left: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+		svg{
+			width: 71px;
+		  height: 71px;
+			padding-right: 84px;
+		}
+  }
+
+  .working-hours__description {
+    align-self: center;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media(min-width: @desktop-width){
+	.working-hours{
+		padding: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 270px;
+    svg{
+      padding: 0;
+      width: 142px;
+      height: 139px;
+      margin-bottom: 23px;
+    }
+	}
+
+	.working-hours__description {
+		padding-left: 72px;
+    padding-right: 77px;
+    
+    text-align: center;
+		font-weight: 500;
+		font-size: 20px;
+	}
+}

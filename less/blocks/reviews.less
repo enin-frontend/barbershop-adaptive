@@ -1,0 +1,281 @@
+.reviews {
+  position: relative;
+
+  color: #000000;
+  
+	background-color: #f8f5f2; 
+  &:after{
+    position: absolute;
+    bottom: -35px;
+    content: "";
+
+    width: 100%;
+    height: 34px;
+
+    background: url(../img/frame-light.svg);
+    background-size: 100% 100%;
+    border-top: 1px solid #353535;
+    transform: rotate(180deg);
+  } 	
+}
+
+.reviews__wrapper{
+  width: 320px;
+  margin: 0 auto;
+}
+
+.reviews__title {
+	margin: 0;
+  padding-top: 30px;
+  
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.reviews__write {
+  display: none;
+}
+
+.reviews__list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.reviews__item-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding:0 20px;
+}
+
+.reviews__author-picture {
+	padding-top: 10px;
+	img{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.reviews__author-name {
+	display: block;
+  margin-bottom: 10px;
+
+	font-size: 24px;
+	line-height: 27px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.reviews__text {
+	width: 210px;
+  margin-bottom:13px;
+}
+
+.reviews__prev,.reviews__next {
+	display: none;
+	padding: 0;
+}
+
+.reviews__toggles {
+	text-align: center;
+	margin: 0;
+}
+
+.reviews-slider__toggle {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin: 0;
+  margin-left: 23px;
+
+  border:1px solid #686867;
+  background-color: transparent;
+  transform: rotate(45deg);
+
+  cursor: pointer;
+  &:nth-child(1){
+  	margin-left: 0;
+  }
+}
+
+.reviews-slider__toggle--active {
+  background-color: #353535;
+}
+
+@media(min-width: @tablet-width) {
+	.reviews{
+    padding-bottom: 65px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .reviews__wrapper{
+    position: relative;
+
+		width: 640px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 23px;
+	}	
+
+	.reviews__title {
+		order: -2;
+		padding: 0;
+    align-self: center;
+    
+    font-size: 40px;
+		text-align: left;
+	}
+
+	.reviews__write {
+		display: block;
+		align-self: flex-end;
+		order: -1;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.reviews__list{
+    position: relative;
+
+		flex-grow: 1;
+		margin-top: 40px;
+	}
+
+	.reviews__item-content {
+		justify-content: flex-start;
+		padding: 0;
+		width: 540px;
+		min-height: 133px;
+    margin: 0 auto;
+
+    border:1px solid #e5ddd5;
+	}
+
+	.reviews__author-picture{
+    width: 140px;
+    
+		text-align: center;
+		img{
+			width: 80px;
+      height: 80px;
+      
+			border-radius: 50%;
+		}
+	}
+
+	.reviews__text {
+		width: 400px;
+	}
+
+	.reviews__prev,.reviews__next{
+		position: absolute;
+    top: 0;
+    
+		display: block;
+		width: 50px;
+    height: 135px;
+
+    font-size: 0;
+
+		background-color: transparent;
+		border:1px solid #e5ddd5;
+    &::after{
+      position: absolute;
+      content: "";
+      right: 18px;
+
+      width: 12px;
+      height: 12px;
+
+      background: url(../img/arrow.svg) no-repeat;
+      transform: rotate(90deg);
+
+      fill: #fff;
+    }
+	}
+
+	.reviews__next {
+		right: 0;
+    &::after{
+      transform: rotate(-90deg);
+    }
+	}
+
+	.reviews__toggles {
+		position: absolute;
+		bottom: -11px;
+    left: 256px;
+    
+    width: 126px;
+    
+		background-color: #f8f5f2;
+	}
+}
+
+@media(min-width: @desktop-width){
+  .reviews{
+    padding: 0;
+  }
+
+	.reviews__wrapper{
+		width: 960px;
+	}
+	
+	.reviews__title{
+		padding-left: 70px;
+	}
+	
+	.reviews__list{
+		width: 100%;
+	}
+
+	.reviews__item-content{
+		width: 820px;
+    height: 160px;
+    display: flex;
+
+		border:none;
+	}
+
+	.reviews__author-picture {
+		padding: 0;
+		margin: 0;
+		width: auto;
+		img{
+			width: 249px;
+      height: 160px;
+      
+			border-radius:0;
+		}
+	}
+
+  .reviews__text {
+    flex-grow: 1;
+    margin: 0;
+    padding-left: 69px;
+    padding-top: 33px;
+    padding-right: 64px;
+
+    border:1px solid #e5ddd5;
+  }
+
+	.reviews__prev, .reviews__next{
+    height: 160px;
+	}
+
+	.reviews__toggles {
+    position: static;
+    
+		padding: 40px 0;
+		width: 100%;
+
+		text-align: center;
+	}
+}

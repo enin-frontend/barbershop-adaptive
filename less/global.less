@@ -1,0 +1,72 @@
+@font-face{
+	font-weight: 500;
+	font-family: "Pt Sans Narrow";
+	font-style: normal;
+	src:url(../fonts/pt-sans-narrow-v10-cyrillic-regular.woff2) format("woff2"),
+	url(../fonts/pt-sans-narrow-v10-cyrillic-regular.eot) format("embedded-opentype");
+}
+
+@font-face{
+	font-weight: 700;
+	font-family: "Pt Sans Narrow";
+	font-style: normal;
+	src:url(../fonts/pt-sans-narrow-v10-cyrillic-700.woff2) format("woff2"),
+	url(../fonts/pt-sans-narrow-v10-cyrillic-700.eot) format("embedded-opentype");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family:"Pt Sans Narrow", "Arial", sans-serif;
+	color: #f7f4f1;
+	font-weight: 500;
+	font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.button {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 90px;
+  padding-right: 90px;
+  
+	text-align: center;
+	text-decoration:none;
+	color: #000000;
+	font-weight: 700;
+  text-transform: uppercase;
+  
+	border: 1px solid #e5ddd5;
+  &:hover{
+    border-color: #d5c9bd;
+  }
+  &:active{
+    color: rgba(0,0,0,0.3);
+    
+    background-color: #d5c9bd;
+  }
+}

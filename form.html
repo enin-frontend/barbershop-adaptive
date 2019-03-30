@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Барбершоп "Бородинский"</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<a href="#" class="page-header__logo page-header__logo--photo">
+			<picture>
+				<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+				<img src="img/logotype.svg" alt="Барбершоп 'Бородинский'" class="page-header__logo-image" width="226"
+					height="30">
+			</picture>
+		</a>
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="photo.html">Наши работы</a>
+				</li>
+				<li class="site-list__item site-list__item--active">
+					<a>Записаться</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Контакты</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
+			<ul class="main-nav__list user-list">
+				<li class="user-list__item">
+					<a href="#" class="user-list__login">
+						Войти
+						<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 16 16">
+							<path d="M0 7h7.01V4.06l3.95 3.95-3.95 3.9V9.06L0 9.02V7z"/>
+							<path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</nav>
+	</header>
+	<main class="form">
+		<section class="form-page">
+			<div class="form__wrapper">
+				<h2 class="form__title">
+					Запись на стрижку
+				</h2>
+				<a href="#" class="form__link button">
+					На главную
+				</a>
+				<form class="form__request" action="index.html">
+					<div class="form__user-block">
+						<p class="form__item form__item--name">
+							<label class="visually-hidden" for="user__first-name">Имя</label>
+							<input class="name__text name__user--first-name" id="user__first-name" type="text" name="first-name" placeholder="Имя">
+						</p>
+						<p class="form__item form__item--name">
+							<label class="visually-hidden" for="user__last-name">Фамилия</label>
+							<input class="name__text name__user--last-name" id="user__last-name" type="text" name="last-name"	placeholder="Фамилия">
+						</p>
+						<p class="form__item form__item--name">
+							<label class="visually-hidden" for="user__patronymic">Отчество</label>
+							<input class="name__text name__user--patronymic" id="user__patronymic" type="text" name="patronymic" placeholder="Отчество">
+						</p>
+						<p class="form__item item__contacts">
+							<label class="visually-hidden" for="user__phone">Контактный телефон</label>
+							<input class="name__text name__user--phone" id="user__phone" type="text" name="phone-number" placeholder="Контактный телефон">
+						</p>
+						<p class="form__item item__contacts">
+							<label class="visually-hidden" for="user__mail">Контактный e-mail</label>
+							<input class="name__text name__user--mail" id="user__mail" type="text" name="mail" placeholder="Контактный e-mail">
+						</p>
+						<p class="form__item item__text">
+							<label class="visually-hidden" for="user__mail">Доп. информация для мастера</label>
+							<textarea class="name__text name__user--text" name="text" id="user__text" placeholder="Доп. информация для мастера"></textarea>
+						</p>
+					</div>
+					<fieldset class="form__model beard">
+						<legend class="beard__tittle">
+							Выберите модель бороды:
+						</legend>
+						<ul class="form__list beard__list">
+							<li class="beard__item">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-admiral" type="radio"	value="admiral" name="product group" checked>
+								<label for="filter-admiral">
+									адмирал
+									<svg xmlns="http://www.w3.org/2000/svg" width="51.5" height="49.5" viewBox="0
+									0 51.5 49.5">
+										<path d="M50.8 0h-.2c-2.3 7.7-2.9 17.1-9.4
+										20.6-1.2-3.4-4.1-4.9-7.4-6.4s-4.5-2.6-6.6-2.6a2.2 2.2 0 0 0-1.5.3 2.2 2.2 0 0
+										0-1.5-.3c-2.1.1-4.5 1.7-6.6 2.6s-6.2 3-7.4 6.4C3.8 17 3.1 7.7.8 0H.6A14.5 14.5
+										0 0 0 0 2.4c0 1.9.5 21.5 1.9 28.4S8 41.6 12.7 44.6s8.5 4.8 13 4.8 9.7-2.8
+										13-4.8 9.6-7.5 10.8-13.8 1.9-26.5 1.9-28.4a14.5 14.5 0 0 0-.6-2.4zM36.9 28c-.2
+										1.6-1.7 3.4-3.4 3.5s-4.5-4.4-7.9-4.4-4.9 4.5-7.9 4.4-3.1-1.9-3.4-3.5a7.6 7.6 0
+										0 1 1.7-5.6c1.1-1.1 2.8-.9 4.7-1.2a8.6 8.6 0 0 0 4.9-1.9 8.6 8.6 0 0 0 4.9
+										1.9c1.9.3 3.6.1 4.7 1.2a7.6 7.6 0 0 1 1.7 5.6z" fill="#826550" />
+									</svg>
+								</label>
+							</li>
+							<li class="beard__item">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-hewer" type="radio" value="hewer" name="product group">
+								<label for="filter-hewer">
+									лесоруб
+									<svg xmlns="http://www.w3.org/2000/svg" width="57.7" height="68.6" viewBox="0
+									0 57.7 68.6">
+										<path d="M51.6 22.2c.1-1.7.5-3.5.7-5.4.7-5.4
+										1.6-11.7-.1-16.8H52c-1.3 3.7-1.3 8.3-2.2 12.4a19.7 19.7 0 0 1-3.2 7.6 4.4 4.4
+										0 0 1-1.9 1.7c-.7-3.9-4.3-4.9-7.7-6.4s-4-2-6.1-2.2a10.8 10.8 0 0 0-2 .2 10.6
+										10.6 0 0 0-2-.2c-2.1.1-4 1.3-6.1 2.2s-7 2.4-7.7 6.4a4.4 4.4 0 0 1-1.9-1.8A19.7
+										19.7 0 0 1 8 12.3c-.9-4-.8-8.6-2.2-12.4h-.3C3.8 5 4.7 11.3 5.4 16.7c.2 1.9.6
+										3.7.7 5.4.8 11.1-7 23.1-6 28.9.9 7.5 8.4 9.4 14.2 12.4s8.3 5 13.3 5.2h2.6c5-.2
+										9-2.9 13.3-5.2s13.2-4.7 14.1-12.3c1-5.8-6.8-17.8-6-28.9zM28.9 26a35.9 35.9 0 0
+										1-7.2-.5c.7-2.1 4-1.6 7.1-1.6h.2c3 0 6.4-.5 7.1 1.6a36 36 0 0 1-7.2.5z" fill="#826550" />
+									</svg>
+								</label>
+							</li>
+							<li class="beard__item">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-polar-explorer" type="radio" value="polar explorer" name="product group">
+								<label for="filter-polar-explorer">
+									полярник
+									<svg xmlns="http://www.w3.org/2000/svg" width="62.4" height="78.5" viewBox="0
+									0 62.4 78.5">
+										<path d="M62.4 42c0-5.2-2.4-7.8-3.6-10a56 56 0 0 1-4.2-17.6C54.5
+										9.5 52.9 2 51.7 0c-.9 0-1.5 7.8-2.3 11.6-1.4 7-3.8 8.9-4.4
+										9-.8-2.8-4.1-7.4-13.7-7.7h-.2c-9.6.4-12.9 4.9-13.7 7.7-.7-.1-3-2-4.4-9C12.2
+										7.7 11.6 0 10.7 0 9.5 2 7.9 9.5 7.8 14.4A56.1 56.1 0 0 1 3.6 32C2.4 34.2 0
+										36.7 0 42s5.2 7.2 5.6 11.4c.1 1.2 0 2.3.1 3.4 2 17.5 17.9 21.7 25.4 21.7 7.6 0
+										23.4-4.2 25.4-21.7.2-1 0-2.1.1-3.4.6-4.2 5.8-7.6 5.8-11.4zM33.2 26.8a20.6 20.6
+										0 0 0-4.1 0c-1.7.3-5.8 1-5.8-1.1s6.7-2.3 7.8-2.3 7.8 1.2 7.8 2.3-3.9 1.4-5.7
+										1.1z" fill="#826550" />
+								</svg>
+								</label>
+							</li>
+							<li class="beard__item">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-boyar" type="radio" value="boyar" name="product group">
+								<label for="filter-boyar">
+									боярин
+									<svg xmlns="http://www.w3.org/2000/svg" width="57" height="97.7" viewBox="0 0
+									57 97.7">
+										<path d="M51.1 15.3c-.4-5.5-.6-10.9-2.5-15.2-.8 0-1.5 7.3-2.3
+										10.9-1.5 7.1-3.7 8.3-4.4 8.3-.9-3.9-4.4-4.2-7.8-5.9a11.1 11.1 0 0 0-3.6-1.2
+										14.6 14.6 0 0 0-2 .1 14.4 14.4 0 0 0-2-.1 11.1 11.1 0 0 0-3.6 1.2c-3.4 1.6-6.9
+										2-7.8 5.9-.7 0-3-1.1-4.4-8.3C10 7.4 9.2.1 8.4.1 6.5 4.5 6.3 9.9 5.9 15.3 5
+										38.8 0 51.6 0 62.5c0 26.1 11.7 35.3 28.5 35.3S57 88.6 57
+										62.5c0-10.9-5-23.7-5.9-47.2zM34.4 25c-2.8 1.2-5.4-.7-5.9-.7h-.1c-.5 0-3.1
+										1.9-5.9.7-.8-3.6 2.4-4 5.9-3.9s6.8.3 6 3.9z" fill="#826550" />
+									</svg>
+								</label>
+							</li>
+							<li class="beard__item">
+								<input class="visually-hidden filter-input filter-input-radio" id="filter-sage" type="radio" value="sage" name="product group">
+								<label for="filter-sage">
+									мудрец
+									<svg xmlns="http://www.w3.org/2000/svg" width="44.7" height="104.8" viewBox="0
+									0 44.7 104.8">
+										<path d="M43.4 0h-.1c-2.8 21.5-5.4 22.6-7
+										22.7s-3.6-1.8-4.9-2.5a15.9 15.9 0 0 0-9.1-2.6 15.9 15.9 0 0 0-9.1
+										2.5c-1.3.7-3.5 2.6-4.9 2.5s-4.1-1.2-7-22.7C-.8 12.1-.3 50.1 2.5 63.5 5.1 82
+										12.6 98.6 15.9 103.1c.7 1 3.5 1.6 6.4 1.6s5.7-.5 6.4-1.6C32 98.6 39.5 82 42.1
+										63.5 45 50.2 45.5 12.2 43.4 0zM22.3 28.1a100.2 100.2 0 0 0-10.1.5c1.1-1.8
+										9-3.2 10.1-3.4s9 1.7 10.1 3.4a100.2 100.2 0 0 0-10.1-.5z" fill="#826550" />
+									</svg>
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__additional additionaly">
+						<legend class="additionaly__title">
+							Дополнительные услуги:
+						</legend>
+						<ul class="additionally__list">
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-paint-a-beard" name="paint" checked>
+								<label for="filter-paint-a-beard">
+									Подкрасить бороду
+								</label>
+							</li>
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-comb-a-beard" name="comb" checked>
+								<label for="filter-comb-a-beard">
+									Причесать бороду
+								</label>
+							</li>
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-remove-gray-hair" name="remove">
+								<label for="filter-remove-gray-hair">
+									Убрать седину
+								</label>
+							</li>
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-wind-the-mustache" name="wind">
+								<label for="filter-wind-the-mustache">
+									Накрутить усы
+								</label>
+							</li>
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-trim" name="trim">
+								<label for="filter-trim">
+									Подровнять виски
+								</label>
+							</li>
+							<li class="additionally__item">
+								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-polish-up" name="polish-up">
+								<label for="filter-polish-up">
+									Отполировать лысину
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="form__link form__link--submit button">
+						Отправить заявку
+					</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contacts contacts">
+				<b class="contacts__title">
+					Барбершоп "Бородинский"
+				</b>
+				<p class="contacts__text">
+					г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+					<a class="contacts__phone" href="tel:+8812555-66-66">
+						<span class="contacts__phone-mobile">
+							Тел.:
+						</span>
+						+7 (812) 555-66-66
+					</a>
+				</p>
+			</div>
+
+			<div class="page-footer__social social">
+				<span class="social__tittle">Давайте дружить!</span>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="#" class="social__link social__link--vkontakte">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="22" viewBox="0 0
+							26.14 14.91">
+								<path d="M26 13.47l-.09-.17a13.55 13.55 0 0
+								0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1
+								1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87
+								0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22
+								22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0
+								1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0
+								1-.16-.53V1.6a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0
+								0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33
+								1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0
+								0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21
+								2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0
+								1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0
+								1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0
+								5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0
+								.1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66
+								2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0
+								0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0
+								.72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1
+								.09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1
+								.23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41
+								0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58
+								1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0
+								0-.1-.36z" fill="#fff" />
+							</svg>
+							Мы Вконтакте
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0
+							10.15 21.74">
+								<path
+									d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 
+									0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
+									fill="#fff" />
+							</svg>
+							Мы в Фейсбук
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--instagram">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 20">
+								<path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0
+								0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4
+								3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18
+								4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0
+								1 .5.5z" fill="#fff" />
+							</svg>
+							Мы в Инстаграме
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright copyright">
+				<b class="copyright__text">
+					Разработано:
+				</b>
+				<a href="#" class="button copyright__link">
+					HTML Academy
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('main-nav--nojs');
+
+		navToggle.addEventListener('click', function() {
+		if (navMain.classList.contains('main-nav--closed')) {
+			navMain.classList.remove('main-nav--closed');
+			navMain.classList.add('main-nav--opened');
+		} 
+		else {
+			navMain.classList.add('main-nav--closed');
+			navMain.classList.remove('main-nav--opened');
+		}
+		});
+	</script>
+</body>
+</html>
